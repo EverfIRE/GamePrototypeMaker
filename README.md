@@ -1,2 +1,24 @@
 # GamePrototypeMaker
-AiAgent tool for quickly validating and prototyping game ideas.
+
+Game Prototype Validation Agent MVP for converting raw game ideas into scoped prototype plans,
+scaffold generation, and feedback-driven iteration planning.
+
+## Implemented MVP (Backend)
+
+- FastAPI API endpoints for project lifecycle.
+- Deterministic workflow orchestrator with strict stage transitions.
+- Pydantic data contracts for project, analysis, scope, and review outputs.
+- Filesystem + SQLite persistence for project state and artifact history.
+- Template-based web scaffold generation with targeted TODO patching.
+
+## Quick start
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Then open `http://127.0.0.1:8000/docs`.
