@@ -1,0 +1,17 @@
+"""Application constants and workflow stage names."""
+
+from enum import Enum
+
+
+class WorkflowStage(str, Enum):
+    IDEA_RECEIVED = "IDEA_RECEIVED"
+    IDEA_ANALYZED = "IDEA_ANALYZED"
+    PROTOTYPE_SCOPED = "PROTOTYPE_SCOPED"
+    DOC_GENERATED = "DOC_GENERATED"
+    CODE_GENERATED = "CODE_GENERATED"
+    PLAYTEST_REVIEWED = "PLAYTEST_REVIEWED"
+    NEXT_ITERATION_PLANNED = "NEXT_ITERATION_PLANNED"
+
+
+DEFAULT_TARGET_ENGINE = "web"
+WORKSPACE_ROOT = "workspace/projects"
