@@ -1,0 +1,8 @@
+{
+  "name": "prototype-web-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo 'Replace with Phaser dev server'"
+  }
+}
